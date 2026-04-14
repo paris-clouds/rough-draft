@@ -16,6 +16,7 @@ header {
   color: white;
   text-align: center;
   padding: 20px;
+  margin: auto;
 }
 
 /* NAVBAR */
@@ -76,7 +77,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 15px;
-  background: #791313;
+  background: rgb(110, 52, 52);
 }
 
 footer a {
@@ -111,4 +112,29 @@ body {
 
 h1, h2, h3 {
   font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+.shelter-support {
+  gap: 10px;
+  flex-direction: column;
+}
+.p {
+  text-align: center;
+}
+.ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+a:link {
+  color: #791313;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #791313;
+  text-decoration: underline;
+  background-color: transparent;
 }
