@@ -128,18 +128,8 @@ h1, h2, h3 {
   justify-content: center;
   gap: 20px;
 }
-a:link {
-  color: #791313;
-  text-decoration: none;
-  background-color: transparent;
-}
 a:hover {
   color: #791313;
   text-decoration: underline;
-  background-color: transparent;
-}
-.target link {
-  color: #791313;
-  text-decoration: none;
   background-color: transparent;
 }
