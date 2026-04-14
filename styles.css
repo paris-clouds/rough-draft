@@ -13,10 +13,20 @@ body {
 /* HEADER */
 header {
   background: rgb(230, 81, 101);
-  color: white;
-  text-align: center;
   padding: 20px;
-  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;   /* stack logo + title */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30px;
+  height: auto;
 }
 
 /* NAVBAR */
@@ -57,6 +67,7 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 /* FLEX LAYOUT */
@@ -65,6 +76,7 @@ nav a:hover {
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
 }
 
 .flex img {
@@ -75,9 +87,19 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 15px;
+  text-align: right;
+  padding: 32px;
   background: rgb(110, 52, 52);
+}
+footer img {
+  align-items: center;
+  width: 80px;
+  float: left;
+}
+.copyright {
+  color: white;
+  font-size: 14px;
+  text-align: bottom;
 }
 
 footer a {
