@@ -138,3 +138,8 @@ a:hover {
   text-decoration: underline;
   background-color: transparent;
 }
+.target link {
+  color: #791313;
+  text-decoration: none;
+  background-color: transparent;
+}
