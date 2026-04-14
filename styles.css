@@ -121,18 +121,16 @@ h1, h2, h3 {
 .p {
   text-align: center;
 }
-.ul {
+ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   gap: 20px;
+  color: white;
 }
 a:hover {
   color: #791313;
   text-decoration: underline;
   background-color: transparent;
-}
-.nav {
-  color: white;
 }
