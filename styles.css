@@ -16,17 +16,10 @@ header {
   padding: 20px;
   color: white;
   display: flex;
-  flex-direction: column;   /* stack logo + title */
-  align-items: center;      /* center horizontally */
-  justify-content: center;  /* center vertically */
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center; 
   text-align: center;
-}
-
-header img {
-  display: block;
-  margin: 0 auto;
-  max-width: 30px;
-  height: auto;
 }
 
 /* NAVBAR */
@@ -155,4 +148,22 @@ a:hover {
   color: #791313;
   text-decoration: underline;
   background-color: transparent;
+}
+.grooming {
+  gap: 10px;
+  flex-direction: column;
+  text-align: right;
+}
+.grooming img {
+  align-items: left;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+.grooming-card {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
