@@ -70,12 +70,28 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  justify-content: center;
+}
+#mission .flex {
+  justify-content: space-between;
+  text-align: right;
 }
 
+#mission .flex img {
+  margin: 0; /* remove auto-centering */
+}
+
+#mission .flex p {
+  flex: 1;
+}
 .flex img {
   width: 100%;
   max-width: 250px;
   border-radius: 10px;
+  margin: auto;
+}
+.flex > div {
+  align-items: center;
 }
 
 /* FOOTER */
@@ -133,32 +149,48 @@ h1, h2, h3 {
   gap: 10px;
   flex-direction: column;
 }
-.p {
-  text-align: center;
-}
-ul {
+
+.card ul {
   list-style: none;
+  list-style-position: inside; /* keeps bullets aligned with text */
+  text-align: center;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  color: white;
 }
+
+.card ul li {
+  margin: 10px 0;
+}
+.card ul li::before {
+  content: "🐾 ";
+  color: rgb(230, 81, 101);
+}
+
+ul {
+  padding: 0;
+}
+
 a:hover {
   color: #791313;
   text-decoration: underline;
   background-color: transparent;
 }
 .grooming {
-  gap: 10px;
+  display: flex;
   flex-direction: column;
-  text-align: right;
+  align-items: center;   /* centers image + content */
+  text-align: center;    /* centers text */
+  gap: 15px;
 }
 .grooming img {
-  align-items: left;
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 250px;
   border-radius: 10px;
+}
+.grooming ul {
+  text-align: center;
+  padding: 0;
 }
 .grooming-card {
   background: white;
@@ -166,4 +198,32 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#support .flex {
+  display: flex;
+  align-items: flex-start;
+  text-align: right;
+}
+#support .flex {
+  justify-content: center;
+  text-align: center;
+}
+
+#support .flex > div {
+  align-items: center;
+}
+
+#mission .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+#mission img {
+  max-width: 300px;
+}
+
+#mission p {
+  flex: 1;
 }
